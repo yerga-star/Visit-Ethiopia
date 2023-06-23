@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar.jsx'
 import Card from './components/Card.jsx'
-import data from './data.js'
+import data from './DB/data.js'
 
 export default function App() {
   
