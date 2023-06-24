@@ -1,13 +1,13 @@
 *{
-    font-family: 'Intern' sans-serif;
+    font-family: 'Intern', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
 nav{
-    height: 80px;
+    height: 60px;
     width: 100%;
     display: flex;
-    padding: 25px 50px;
+    padding: 20px 50px;
     box-shadow: 0px 2.98256px 7.4564px rgba(4, 115, 241, 0.731);
     align-items: center;
     overflow: scroll;
@@ -25,6 +25,7 @@ nav{
 }
 #nav--subscribe{
     color: #1f92de;
+    font-size: small;
 }
 .card{
     padding: 30px 30px;
@@ -43,7 +44,7 @@ nav{
     display: flex;
     overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 10; /* Adjust the number of lines as needed */
+  -webkit-line-clamp: 11; /* Adjust the number of lines as needed */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   white-space: normal; 
@@ -55,9 +56,24 @@ nav{
 }
 p{
     color: #44545e;
+    font-size: 14px;
+}
+#p--interest{
+    color: #0a682b;
+    font-size: 11px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.card--list {
+.container {
     display: flex;
     flex-wrap: wrap;
+
 }
+@media (max-width: 800px) {
+    .card{
+      flex-basis: 100%; /* Each div occupies 100% of the container's width in column mode */
+    }
+    #nav--subscribe{
+        display: none;
+    }
+  }

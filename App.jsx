@@ -9,9 +9,7 @@ export default function App() {
     return (
     <Card 
     key={place.id}
-    img={place.img}
-    name={place.name}
-    detail={place.detail}
+    place={place}
     />
     )
     
@@ -19,7 +17,7 @@ export default function App() {
   return (
     <div>
     <Navbar />
-    <section className='card--list'>
+    <section className='container'>
       {places}
     </section>
     </div>
