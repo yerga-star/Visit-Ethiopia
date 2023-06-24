@@ -17,9 +17,9 @@ export default function App() {
   return (
     <div>
     <Navbar />
-    <section className='container'>
+    <div className='main'>
       {places}
-    </section>
+    </div>
     </div>
   )
 }
