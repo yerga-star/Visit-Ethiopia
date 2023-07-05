@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar.jsx'
 import Card from './components/Card.jsx'
 import data from './DB/data.js'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
 
@@ -26,6 +27,7 @@ export default function App() {
     <div className={darkMode ? "main--dark": "main"}>
       {places}
     </div>
+    <Footer />
     </div>
   )
 }

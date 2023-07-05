@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-nav,.nav--dark {
+nav,.nav--dark, footer {
     height: 60px;
     width: 100%;
     display: flex;
@@ -136,6 +136,17 @@ justify-content: flex-start;
 .nav--dark .toggler--dark{
     color: white;
 }
+ul{
+    display: flex;
+
+}
+li{
+    margin: 20px;
+}
+
+footer{
+    background-color: #98b7e3;
+}
 
 @media (max-width: 800px) {
     .card {
@@ -165,5 +176,8 @@ justify-content: flex-start;
     }
     .child-inner{
         width: 100%;
+    }
+    footer ul{
+        display: none;
     }
 }
