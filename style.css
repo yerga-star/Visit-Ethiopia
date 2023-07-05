@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-nav {
+nav,.nav--dark {
     height: 60px;
     width: 100%;
     display: flex;
@@ -15,10 +15,17 @@ nav {
     overflow: hidden;
 }
 
+.nav--dark{
+    box-shadow: 0px 2.98256px 7.4564px rgb(244, 246, 246);
+    background-color: #21222A;
+
+}
+
 .nav--logo {
     margin: 0;
     height: 60px;
     max-width: 100px;
+    border-radius: 50%;
 }
 
 #nav--title {
@@ -37,10 +44,23 @@ nav {
     width: 100%;
     padding: 30px;
 }
-
-.container {
+.main--dark{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+    background-color: #282D35;
+}
+.container,.container--dark {
     width: 50%;
     padding-bottom: 20px;
+}
+
+.container--dark p{
+    color: white;
+}
+.container--dark h3{
+color: blanchedalmond;
 }
 
 .container-child {
@@ -72,9 +92,49 @@ p {
 }
 
 #p--interest {
-    color: #0a682b;
+    color: rgb(100, 171, 185);
     font-size: 11px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.toggler--slider{
+background-color: #2B283A;
+width: 25px;
+height: 13px;
+border-radius: 2rem;
+margin-inline: 7px;
+border: 1px solid black;
+box-sizing: content-box;
+cursor: pointer;
+display: flex;
+justify-content: flex-start;
+}
+.nav--dark .toggler--slider{
+    border-color: white;
+    background-color: #F5F5F5;
+    justify-content: flex-end;
+}
+.toggler--slider--circle{
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+.nav--dark .toggler--slider--circle{
+    background-color: black;
+}
+
+.toggler--light{
+    color: #2B283A;
+}
+.nav--dark .toggler--light{
+    color: #918E9B;
+}
+.toggler--dark{
+    color: #D5D4D8;
+}
+.nav--dark .toggler--dark{
+    color: white;
 }
 
 @media (max-width: 800px) {
@@ -82,17 +142,25 @@ p {
         flex-basis: 100%;
         /* Each div occupies 100% of the container's width in column mode */
     }
-
+    nav,.nav--dark, .main,.main--dark{
+        padding: 0 0px;
+    }
+    #nav--title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: calc(32px * 0.5);
+    }
     #nav--subscribe {
         display: none;
     }
     .container-child{
         flex-direction: column;
     }
-    .main{
+    .main,.main--dark{
         flex-direction: column;
     }
-    .container{
+    .container,.container--dark{
         width: 100%;
     }
     .child-inner{

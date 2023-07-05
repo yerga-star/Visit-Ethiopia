@@ -3,7 +3,7 @@ import React from "react";
 export default function Card(props) {
 
     return (
-        <div className="container">
+        <div className={props.isDarkMode ? "container--dark":"container"}>
             <div className="container-child">
                 <div className="child-inner">
                     <img src={`../images/${props.place.img}`} />
